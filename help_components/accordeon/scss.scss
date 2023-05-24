@@ -1,0 +1,41 @@
+.accordeon__list{
+    display: flex;
+    flex-direction: column;
+    // gap: 30px;
+    margin-bottom: 40px;
+    border: 2px solid $default;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    :last-child{
+        border-bottom: none;
+    }
+}
+
+.spoiler{
+    width: auto;
+    color: $default;
+    border-bottom: 2px solid $default;
+    padding: 5px;
+}
+
+
+.spoiler__preview {
+    cursor: pointer;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.spoiler__wrapper{
+    overflow: hidden;
+    transition: .5s;
+}
+
+.spoiler__body {
+    padding-top: 10px;
+    padding-bottom: 0;
+}

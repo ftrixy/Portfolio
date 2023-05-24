@@ -1,0 +1,58 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 24px;
+    color: $accent;
+    line-height: 29px;
+    @extend %inter-400;
+    display: flex;
+    flex-direction: column;
+    background-color: $default;
+    // background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1; // Розтягує контент посередині по вертикалі. Header та footer розкидаються на верх і на низ відповідно.
+}
+
+.container {
+    max-width: 1440px;  // Змінюється по макету 
+    margin: 0 auto;
+    padding: 0 140px; // Змінюється по макету 
+    min-height: 100%;
+    position: relative;
+}
+
+.header{  // Header прилипає до верху
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.footer {
+    min-width: 100%; 
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #fff;
+}
+::-ms-input-placeholder {
+    color: #fff;
+}
