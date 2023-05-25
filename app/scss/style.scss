@@ -69,11 +69,6 @@
         margin-bottom: 60px;
     }
     &__btn {
-        font-size: 20px;
-        line-height: 30px;
-        @extend %oswald-700;
-        align-items: center;
-        color: #000;
         width: 200px;
         height: 47px;
         background: #e3e807;
@@ -82,6 +77,9 @@
         border-radius: 6px;
         cursor: pointer;
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__btn:hover {
         align-items: center;
@@ -89,6 +87,13 @@
         box-shadow: 0px 4px 26px rgba(36, 91, 234, 0.48);
         transform: scale(1.1);
         transition: all 0.3s ease;
+    }
+    &__btn-link {
+        font-size: 20px;
+        line-height: 30px;
+        @extend %oswald-700;
+        align-items: center;
+        color: #000;
     }
     &__foto {
         display: flex;
@@ -150,16 +155,17 @@
         border-radius: 29px;
         padding: 30px;
         margin-bottom: 30px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
+
         p {
             @extend %oswald-400;
             line-height: 35px;
             margin-left: 10px;
         }
     }
-    &__info-item:hover{
+    &__info-item:hover {
         transform: scale(1.1);
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
     &__skills {
         display: flex;
@@ -167,6 +173,7 @@
         justify-content: center;
         gap: 30px;
     }
+
     &__skills-item {
         display: flex;
         flex-direction: column;
@@ -178,14 +185,134 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
         border-radius: 29px;
         padding: 25px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
         svg {
             height: 50%;
         }
     }
-    &__skills-item:hover{
+    &__skills-item:hover {
         transform: scale(1.1);
-        transition: all .3s ease;
+        transition: all 0.3s ease;
+    }
+}
+
+// <------------- PROMO ------------->
+
+.portfolio {
+    background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+    &__inner {
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 71px;
+        @extend %oswald-400;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+    &__item {
+        max-width: 550px;
+        min-height: 550px;
+        background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+        box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+        border-radius: 29px;
+        padding: 50px;
+        transition: all 0.3s ease;
+        position: relative;
+        img {
+            border-radius: 29px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__item-link {
+        position: absolute;
+        content: "";
+        width: 82%;
+        height: 35%;
+        padding: 20px;
+        background: rgba(27, 27, 27, 0.8);
+        color: $accent;
+        font-size: 18px;
+        line-height: 27px;
+        @extend %oswald-300;
+        bottom: 9%;
+        left: 9%;
+        border-top: 3px solid $accent;
+        border-radius: 0 0 29px 29px;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    &__item:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        .portfolio__item-link {
+            opacity: 1;
+            transition: all 0.5s ease;
+            padding: 20px;
+        }
+    }
+}
+
+// <------------- CONTACT ------------->
+
+.contact {
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+    &__inner {
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 71px;
+        @extend %oswald-400;
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    &__items {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    &__item {
+        display: flex;
+        margin: 0 auto;
+        max-width: 570px;
+        height: 100px;
+        background: #2a2a2a;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+        border-radius: 29px;
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        a {
+            @extend %oswald-400;
+            line-height: 35px;
+            color: $accent;
+            margin-left: 50px;
+        }
+    }
+    &__item:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+}
+
+// <------------- FOOTER ------------->
+
+.footer {
+    min-height: 100px;
+    background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+    &__copyright {
+        text-align: center;
+        font-size: 18px;
+        line-height: 27px;
+        @extend %oswald-300;
+        margin: 35px auto;
     }
 }
 

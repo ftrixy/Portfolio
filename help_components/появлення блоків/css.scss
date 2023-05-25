@@ -1,0 +1,49 @@
+// з нуля до 100 появлення
+.div {
+        opacity: 0;
+        animation: show 3s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+}
+
+@keyframes show {
+        0% {
+                opacity: 0;
+        }
+        100% {
+                opacity: 1;
+        }
+}
+
+// з центру в різні сторони
+.div {
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        animation-name: slidegdz;
+        animation-fill-mode: forwards;
+}
+
+@keyframes slidegdz {
+        0% {
+                width: 10%;
+        }
+        100% {
+                width: 80%;
+        }
+}
+
+
+
+
+// Появлення з кодом js
+//задаємо значення для блоку який повинен з'явитись
+.div {
+        opacity: 0;
+        transform: translateY(100%);
+}
+
+.div.element-show {
+        opacity: 1;
+        transition: all 0.8s;
+        transform: translateY(0%);
+}
