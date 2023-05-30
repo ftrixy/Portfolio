@@ -25,7 +25,11 @@ main{
     flex-grow: 1; // Розтягує контент посередині по вертикалі. Header та footer розкидаються на верх і на низ відповідно.
 }
 
-.container {
+.container,
+.header__container,
+.promo__container,
+.portfolio__container,
+.about__container {
     max-width: 1920px;  // Змінюється по макету 
     margin: 0 auto;
     padding: 0 350px; // Змінюється по макету 

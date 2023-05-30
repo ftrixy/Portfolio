@@ -8,6 +8,10 @@
 .header {
     height: 100px;
     background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+
+    &__burger{
+        display: none;
+    }
     &__menu {
         margin-top: 34px;
     }
