@@ -151,9 +151,10 @@
     }
     &__info-item {
         display: flex;
+        align-items: center;
         margin: 0 auto;
         max-width: 570px;
-        height: 100px;
+        min-height: 100px;
         background: #2a2a2a;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
         border-radius: 29px;
@@ -284,9 +285,10 @@
     }
     &__item {
         display: flex;
+        align-items: center;
         margin: 0 auto;
         max-width: 570px;
-        height: 100px;
+        min-height: 100px;
         background: #2a2a2a;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
         border-radius: 29px;
