@@ -15,13 +15,13 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.wrapper{
+.wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-main{
+main {
     flex-grow: 1; // Розтягує контент посередині по вертикалі. Header та footer розкидаються на верх і на низ відповідно.
 }
 
@@ -29,15 +29,26 @@ main{
 .header__container,
 .promo__container,
 .portfolio__container,
-.about__container {
-    max-width: 1920px;  // Змінюється по макету 
+.about__container,
+.skills__container {
+    max-width: 1920px; // Змінюється по макету
     margin: 0 auto;
-    padding: 0 350px; // Змінюється по макету 
+    padding: 0 350px; // Змінюється по макету
     min-height: 100%;
     position: relative;
 }
 
-.header{  // Header прилипає до верху
+.title {
+    font-size: 48px;
+    line-height: 71px;
+    @extend %oswald-400;
+    margin-bottom: 100px;
+    text-align: center;    
+}
+
+
+.header {
+    // Header прилипає до верху
     position: fixed;
     width: 100%;
     top: 0;
@@ -47,7 +58,7 @@ main{
 }
 
 .footer {
-    min-width: 100%; 
+    min-width: 100%;
 }
 
 ::placeholder {
