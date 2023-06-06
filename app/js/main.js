@@ -84,35 +84,55 @@ function toggleAccordion(e) {
 
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 'auto',
-  initialSlide: 0,
 
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true, 
+  autoplay: {
+    delay: 1000, //пауза між переключенням слайдів  
+    stopOnLastSlide: true, //зупинка після останнього слайду
+    disableOnInteraction: false, //зупинка після ручної прокрутки
   },
 
-  // Navigation arrows
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar'
+  },
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
+  keyboard: {
+    enable: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+
   scrollbar: {
     el: '.swiper-scrollbar',
     draggable: true,
-    simulateTouch: true,
-    touchRatio: 1,
-    grabCursor: true,
-    touchAngle: 45,
   },
+
+  breakpoints: {
+    1140: {
+      direction: 'horizontal', //орієнтація слайдера
+      // loop: true,  //безкінечна прокрутка слайдера
+      slidesPerView: 3.5, //кількість слайдів для відображення
+      initialSlide: 1, //стартовий слайд
+      touchRatio: 1,
+      grabCursor: true, //вигляд захвату слайду при скролі
+      touchAngle: 45,
+      watchOverFlow: true,
+      // spaceBetween: 30, //відступ між слайдами
+      centeredSlides: true, //центрування слайду
+      freeMode: true, //плавний скрол 
+
+
+    },
+    320: {
+      
+    },
+  }
 
 });
 
