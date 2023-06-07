@@ -113,7 +113,7 @@ const swiper = new Swiper('.swiper', {
     draggable: true,
   },
 
-  breakpoints: {
+  breakpoints: { //брейкпоінт працює в зворотньому вигляді, властивість буде діяти якщо ширина вікна більша за сам брейкпоінт
     1140: {
       direction: 'horizontal', //орієнтація слайдера
       // loop: true,  //безкінечна прокрутка слайдера
