@@ -114,10 +114,10 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    1140: {
+    1150: {
       direction: 'horizontal', //орієнтація слайдера
       // loop: true,  //безкінечна прокрутка слайдера
-      slidesPerView: 3.5, //кількість слайдів для відображення
+      slidesPerView: 4, //кількість слайдів для відображення
       initialSlide: 1, //стартовий слайд
       touchRatio: 1,
       grabCursor: true, //вигляд захвату слайду при скролі
@@ -129,8 +129,33 @@ const swiper = new Swiper('.swiper', {
 
 
     },
+    900: {
+      slidesPerView: 3.5, 
+      grabCursor: true,
+    },
+    640: {
+      slidesPerView: 2.5, 
+      grabCursor: true,
+    },
+    540: {
+      slidesPerView: 2, 
+      grabCursor: true,
+    },
+    500: {
+      slidesPerView: 1.8,
+      grabCursor: true, 
+    },
+    430: {
+      slidesPerView: 1.5, 
+      grabCursor: true,
+    },
+    370: {
+      slidesPerView: 1.2, 
+      grabCursor: true,
+    },
     320: {
-      
+      slidesPerView: 1.2, 
+      grabCursor: true,
     },
   }
 
