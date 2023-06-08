@@ -45,6 +45,8 @@ menuBtn.addEventListener('click', () => {      //Додаємо активні �
 });
 menu.addEventListener('click', () => {
   menu.classList.remove('header__menu-list--active');
+  menuBtn.classList.remove('header__burger--active');
+  body.classList.remove('body--lock');
 });
 
 
@@ -114,7 +116,7 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-    1150: {
+    1140: {
       direction: 'horizontal', //орієнтація слайдера
       // loop: true,  //безкінечна прокрутка слайдера
       slidesPerView: 4, //кількість слайдів для відображення
