@@ -1,4 +1,9 @@
 @media (max-width: 1950px) {
+    .header {
+        &__container {
+            padding: 0 100px;
+        }
+    }
     .promo {
         &__container {
             padding: 0 100px;
@@ -67,13 +72,6 @@
         }
     }
 }
-@media (max-width: 1300px) {
-    .header {
-        &__container {
-            padding: 0 100px;
-        }
-    }
-}
 @media (max-width: 1150px) {
     .header {
         &__container {
@@ -88,6 +86,11 @@
     .about {
         &__container {
             padding: 0 50px;
+        }
+    }
+    .spoiler{
+        &__title{
+            margin-right: 25px;
         }
     }
     .portfolio {
@@ -180,7 +183,7 @@
             z-index: 5;
             flex-direction: column;
             align-items: center;
-            top: -310px;
+            top: -340px;
             left: -100px;
             right: 0;
             bottom: 0;
@@ -239,7 +242,7 @@
         transition: transform 0.3s ease;
         background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
         justify-content: flex-start;
-        padding-top: 30px;
+        padding-top: 100px;
     }
     .header__burger.header__burger--active::before {
         //Розвертаємо верхну полоску та опускаємо її
@@ -261,7 +264,7 @@
     }
     .about {
         &__inner {
-            padding: 50px 0;
+            padding: 75px 0;
         }
         &__title {
             margin-bottom: 50px;
@@ -292,7 +295,7 @@
     }
     .portfolio {
         &__inner {
-            padding: 50px 0;
+            padding: 75px 0;
         }
         &__title {
             margin-bottom: 50px;
@@ -312,7 +315,7 @@
     }
     .contact {
         &__inner {
-            padding: 50px 0;
+            padding: 75px 0;
         }
         &__title {
             margin-bottom: 50px;
@@ -331,7 +334,7 @@
     }
     .skills {
         &__inner {
-            padding: 50px 0;
+            padding: 75px 0;
         }
         &__title {
             margin-bottom: 50px;
